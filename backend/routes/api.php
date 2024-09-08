@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TodosController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CommentController;
@@ -10,3 +11,9 @@ Route::get('/user', function (Request $request) {
 
 Route::get('/comments', [CommentController::class, 'getAll']);
 Route::get('/comments/{id}', [CommentController::class, 'getById']);
+
+// Todos
+Route::group(['prefix' => 'todos'], function () {
+    Route::get('/', [TodosController::class, 'getAll']);
+    Route::get('/{id}', [TodosController::class, 'getById']);
+});

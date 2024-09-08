@@ -17,7 +17,7 @@ class CommentsTableSeeder extends Seeder
 
         foreach (range(1, 5) as $index) {
             DB::table('comments')->insert([
-                'post_id' => $posts->random(),
+                'posts_id' => 1,
                 'author' => Str::random(10),
                 'comment' => Str::random(50),
             ]);
