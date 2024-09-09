@@ -16,7 +16,7 @@ const close = {
 export const AlertWelcome = () => {
     const current = new Date().getHours();
     const openHours = 10;
-    const closeHours = 12;
+    const closeHours = 22;
 
     return (
         current > openHours && current < closeHours
