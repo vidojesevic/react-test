@@ -6,13 +6,15 @@ import './index.css';
 import { Home } from "./pages/Home";
 import { Footer } from "./pages/Footer";
 
+// This was test 2
+// import { CoderCard } from "./pages/test2/CoderCard";
+// <CoderCard />
+
 function App() {
     return (
         <MantineProvider withGlobalStyles withNormalizeCSS>
-            <div id="home">
-                <Home />
-                <Footer />
-            </div>
+            <Home />
+            <Footer />
         </MantineProvider>
     )
 }

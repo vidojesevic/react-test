@@ -11,8 +11,16 @@
 
     .bottom-right-alert {
         position: fixed;
-        bottom: 1rem; /* Adjust as needed */
-        right: 1rem;  /* Adjust as needed */
-        z-index: 9999; /* Ensure it's above other elements */
+        bottom: 1rem;
+        /* Adjust as needed */
+        right: 1rem;
+        /* Adjust as needed */
+        z-index: 9999;
+        /* Ensure it's above other elements */
+    }
+
+    .under-over-line {
+        text-decoration: underline overline;
+        text-decoration-style: double;
     }
 }

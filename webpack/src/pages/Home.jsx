@@ -26,7 +26,7 @@ export const Home = () => {
 
     return (
         <div>
-            {showAlert && <AlertWelcome />}
+            {showAlert && <AlertWelcome openHour={10} closeHour={22} />}
             <Navbar />
             <WelcomeBanner />
             <Menu pizzaArray={pizzaArray} />
